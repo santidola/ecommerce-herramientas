@@ -1,13 +1,14 @@
 const express = require("express");
 const app = express();
 const db = require("./db/conexion_bd")
+const productos = require("./controller/products");
 
-app.get("/", (req, res)=>{
-    res.send("Hola Mundo")
+app.get("/productos", (req, res)=>{
+    productos.mostrar_productos(req, res);
 })
 
-app.get("/santiago", (req, res)=>{
-    res.send("Santiago")
+app.post("/productos", (req, res)=>{
+    productos.agregar_productos(req, res);
 })
 
 app.listen(5000, ()=>{

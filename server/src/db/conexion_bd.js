@@ -1,11 +1,11 @@
 const base = require("mysql2");
 
 const db = base.createConnection({
-    host: 'blo76syozly3xcpvwvwp-mysql.services.clever-cloud.com',    // Host de tu servidor MySQL
-    user: 'uy5oosoaf2feubjt',         // Usuario de MySQL
-    password: 'FMQ21orrQ6qUhXbe9MKd', // Contraseña de MySQL
-    database: 'blo76syozly3xcpvwvwp',     // Nombre de la base de datos que deseas utilizar
-    port: 3306 
+    host: 'containers-us-west-54.railway.app',    // Host de tu servidor MySQL
+    user: 'root',         // Usuario de MySQL
+    password: 'K4gq05odtFyGU9NkSptO', // Contraseña de MySQL
+    database: 'railway',     // Nombre de la base de datos que deseas utilizar
+    port: 6737
   });
   
   // Conecta a la base de datos
